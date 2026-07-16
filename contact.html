@@ -84,40 +84,38 @@
     <section id="contact" class="contact section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Call to Action / Help Box maps to custom Dark Theme tokens -->
+        <div class="card border-0 shadow-sm dark-background rounded-3 p-4 mb-5">
+          <!-- 2. Contact Form pointing to Yahoo email -->
+          <form action="https://formsubmit.co/coachjohne@yahoo.com" method="POST" class="mx-auto"
+            style="max-width: 500px; width: 100%;">
+            <input type="hidden" name="_captcha" value="false">
 
+            <div class="mb-3 text-start">
+              <label for="senderName" class="form-label fw-semibold">Name</label>
+              <input type="text" class="form-control" id="senderName" name="name" placeholder="Your Name" required>
+            </div>
 
+            <div class="mb-3 text-start">
+              <label for="senderEmail" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" id="senderEmail" name="email" placeholder="Your Email Address"
+                required>
+            </div>
 
-        <div class="container col-lg-6">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-            <div class="row gy-4">
+            <div class="mb-4 text-start">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"
+                required></textarea>
+            </div>
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-              </div>
-
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-              </div>
-
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <button type="submit">Send Message</button>
-              </div>
-
+            <div class="text-center">
+              <button type="submit" class="btn px-5 py-2 fw-bold w-100"
+                style="background-color: var(--accent-color); color: var(--contrast-color);">
+                <i class="bi bi-send-fill me-2"></i> Send Message
+              </button>
             </div>
           </form>
-        </div><!-- End Contact Form -->
+        </div>
 
       </div>
 
@@ -133,7 +131,7 @@
 
   </main>
 
- <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">

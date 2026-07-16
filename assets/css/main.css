@@ -77,7 +77,9 @@
   }
 }
 
-
+section#contact {
+    padding-bottom: 0px;
+}
 
 h1.sitename {
   color: #009b3a !important;

@@ -63,6 +63,21 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+@media (max-width: 375px) {
+  /* Your styles for screens 375px and smaller go here */
+  .badgemale2 {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Your CSS rules for screens 320px and smaller go here */
+    .badgemale2 {
+    font-size: xx-small;
+  }
+}
+
+
 
 h1.sitename {
   color: #009b3a !important;
